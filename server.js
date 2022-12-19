@@ -4,7 +4,7 @@ const app = express()
 import cors from 'cors'
 
 const corsOptions = {
-    origin: 'http://localhost:5006'
+    origin: 'https://jobify-cq7e.onrender.com/'
 }
 
 app.use(cors(corsOptions))
