@@ -75,7 +75,7 @@ const AppProvider = ({ children }) => {
 
   //axios custom fetch
   const authFetch = axios.create({
-    baseURL: 'http://localhost:5006/api/v1',
+    baseURL: '/api/v1',
   });
   //axios request interceptor
 
