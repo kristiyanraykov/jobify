@@ -118,7 +118,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: REGISTER_USER_BEGIN });
     try {
       const response = await axios.post(
-        'http://localhost:5006/api/v1/auth/register',
+        '/api/v1/auth/register',
         currentUser
       );
       const { user, location } = response.data;
@@ -139,7 +139,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: LOGIN_USER_BEGIN });
     try {
       const { data } = await axios.post(
-        'http://localhost:5006/api/v1/auth/login',
+        '/api/v1/auth/login',
         currentUser
       );
 
